@@ -26,6 +26,7 @@ export const CountryCard = styled.article`
   img {
     max-width: 100%;
     cursor: pointer;
+    border-radius: 5px 5px 0 0;
   }
 
   :hover {
