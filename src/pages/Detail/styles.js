@@ -13,6 +13,10 @@ export const DetailContainer = styled.div`
   @media(max-width: 767px) {
     flex-direction: column;
   }
+
+  @media(min-width: 1080px) {
+    
+  }
 `
 
 export const InfoContainer = styled.div`

@@ -40,6 +40,10 @@ export const CountryCard = styled.article`
     max-width: 500px;
   }
 
+  @media(min-width: 1464px) {
+    max-width: 500px;
+  }
+
 `
 
 export const InfoSection = styled.section`
