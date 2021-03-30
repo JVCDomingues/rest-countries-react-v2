@@ -10,6 +10,10 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
   }
+
+  @media(min-width: 768px) and (max-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `
 
 export const CountryCard = styled.article`
@@ -30,6 +34,10 @@ export const CountryCard = styled.article`
 
   @media(max-width: 767px) {
     max-width: 100%;
+  }
+
+  @media(min-width: 768px) and (max-width: 900px) {
+    max-width: 500px;
   }
 
 `
