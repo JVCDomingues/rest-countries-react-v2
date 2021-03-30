@@ -1,4 +1,4 @@
-export default {
+const light = {
   title: 'light',
   colors: {
     background: 'hsl(0, 0%, 98%)',
@@ -6,3 +6,5 @@ export default {
     elements: 'hsl(0, 0%, 100%)'
   }
 }
+
+export default light;

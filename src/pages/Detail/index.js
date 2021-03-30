@@ -18,7 +18,6 @@ import {
 
 function Detail() {
   const [country, setCountry] = useState([]);
-  const [borders, setBorders] = useState([]);
   const [currencies, setCurrencies] = useState([]);
   const [languages, setLanguages] = useState([]);
   const { name } = useParams();
@@ -28,8 +27,6 @@ function Detail() {
       const { data } = await api.get(`name/${name}`);
 
       setCountry(data);
-
-      const borders = data.map(data => data.borders);
 
       const currencies = data.map(data => {
         return data.currencies.map(currency => currency.name);
@@ -41,7 +38,6 @@ function Detail() {
 
       console.log(currencies);
 
-      setBorders(borders);
       setCurrencies(currencies);
       setLanguages(languages);
     }

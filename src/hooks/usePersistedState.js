@@ -13,7 +13,7 @@ function usePersistedState(key, initialState) {
 
   useEffect(() => {
     localStorage.setItem(key, JSON.stringify(state));
-  }, [state]);
+  }, [key, state]);
 
   return [state, setState];
 }
