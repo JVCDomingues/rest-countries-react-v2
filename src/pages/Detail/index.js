@@ -36,8 +36,6 @@ function Detail() {
         return data.languages.map(language => language.name);
       });
 
-      console.log(currencies);
-
       setCurrencies(currencies);
       setLanguages(languages);
     }

@@ -14,7 +14,7 @@ function Card({ country }) {
   return (
     <Container>
       {country.map(country => (
-        <CountryCard>
+        <CountryCard key={country.name}>
           <img src={country.flag} alt="Country flag" onClick={() => handleFlagClick(country.name)}/>
 
           <InfoSection>
